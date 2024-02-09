@@ -41,7 +41,7 @@ export const LayoutGrid = () => {
       className="w-full h-full py-10 grid grid-cols-1 md:grid-cols-3 mx-auto gap-5"
       id="work"
     >
-      <h1 className="md:col-span-3">Work</h1>
+      <h1 className="md:col-span-3 max-sm:3xl">Work</h1>
       {cards.map((card, i) => (
         <div
           key={i}
