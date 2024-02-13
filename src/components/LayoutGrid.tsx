@@ -66,9 +66,7 @@ export const LayoutGrid = () => {
             <div className="w-fit h-fit">
               <img src={card.thumbnail} className="rounded-xl" />
             </div>
-            <div className="pt-4 text-neutral-400 text-pretty text-left">
-              {card.desc}
-            </div>
+            <div className="pt-4 text-neutral-400 text-pretty">{card.desc}</div>
           </div>
         </div>
       ))}
