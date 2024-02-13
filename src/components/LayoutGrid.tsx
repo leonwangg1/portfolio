@@ -8,19 +8,40 @@ export const LayoutGrid = () => {
       id: 1,
       className: "col-span-1 md:col-span-3",
       thumbnail: "/surveyapp.png",
-      desc: "The Land Engineering Agency Career Preference Tool is an interactive web-based application with options for inputting preferences and experiences to allow Defence members to explore potential career pathways.",
+      desc: (
+        <p>
+          <strong>The Land Engineering Agency Career Preference Tool.</strong> A
+          web-based application with options for inputting preferences and
+          experiences to allow Defence personel to explore potential career
+          pathways.
+        </p>
+      ),
     },
     {
       id: 2,
       className: "col-span-1 md:col-span-3",
       thumbnail: "/wang.png",
-      desc: "Web development for Wang's Natural Therapy Centre encompasses a serene, user-friendly design that showcases the clinic's acupuncture and holistic services for easy online patient engagement.",
+      desc: (
+        <p>
+          <strong>Wang's Natural Therapy Centre.</strong> Web design and
+          development project for local acupuncture clinic. The site offers a
+          user-friendly and serene design with easy onlie access to the clinic's
+          acupuncture and holistic services.
+        </p>
+      ),
     },
     {
       id: 3,
       className: "col-span-1 md:col-span-4",
       thumbnail: "/mimiblooms.png",
-      desc: "E-commerce platform, mimiblooms, features a CMS for a tailored shopping experience, an admin dashboard, advanced product filtering options, and a custom shopping cart integrated with Stripe for secure payment processing.",
+      desc: (
+        <p>
+          <strong>MimiBlooms.</strong> An ecommerce platform which features a
+          CMS for a tailored shopping experience, an admin dashboard, advanced
+          product filtering options, and a custom shopping cart integrated with
+          Stripe for secure payment processing.
+        </p>
+      ),
     },
     {
       id: 4,
@@ -45,7 +66,9 @@ export const LayoutGrid = () => {
             <div className="w-fit h-fit">
               <img src={card.thumbnail} className="rounded-xl" />
             </div>
-            <div className="pt-4 text-neutral-400 text-pretty">{card.desc}</div>
+            <div className="pt-4 text-neutral-400 text-pretty text-left">
+              {card.desc}
+            </div>
           </div>
         </div>
       ))}
