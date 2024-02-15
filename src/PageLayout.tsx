@@ -8,7 +8,7 @@ const PageLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="py-8 px-10 lg:px-64">
       <Analytics />
-      <header className="mb-60 z-50">
+      <header className="mb-44 md:mb-60 z-50">
         <Navbar />
       </header>
       <main>{children}</main>
