@@ -32,7 +32,7 @@ export const LayoutGrid = () => {
       className: "col-span-1 md:col-span-3",
       thumbnail: "/wang.png",
       desc: (
-        <a href="wangs-therapy.com" target="_blank">
+        <a href="https://www.wangs-therapy.com" target="_blank">
           <p>
             <strong>Wang's Natural Therapy Centre.</strong> Web design and
             development project for local acupuncture clinic.
@@ -53,7 +53,7 @@ export const LayoutGrid = () => {
       className: "col-span-1 md:col-span-3",
       thumbnail: "/mimiblooms.png",
       desc: (
-        <a href="mimiblooms.store" target="_blank">
+        <a href="https://www.mimiblooms.store" target="_blank">
           <p>
             <strong>MimiBlooms.</strong> An ecommerce platform developed with
             Medusa.js and Next.js with auth and secure payment processing.
@@ -97,7 +97,7 @@ export const LayoutGrid = () => {
                   "linear-gradient(to top, rgba(0,0,0,0.85) 0%, #0003 60%)",
               }}
             >
-              <span className="text-neutral-300 text-pretty text-xs md:text-lg z-10">
+              <span className="text-neutral-300 text-pretty text-xs md:text-lg z-10 cursor-pointer">
                 {card.desc}
               </span>
             </div>
