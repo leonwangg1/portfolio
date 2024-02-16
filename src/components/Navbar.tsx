@@ -3,13 +3,15 @@ import { Link } from "react-router-dom";
 export const Navbar = () => {
   return (
     <div className="flex flex-row justify-center gap-5 text-sm lg:text-lg">
-      <Link to="/" className="py-2 ">
+      <Link to="/" className="py-2">
         Home
       </Link>
-      <a href="#work" className="py-2 ">
+      <a href="#work" className="py-2">
         Projects
       </a>
-      {/* <a href="#about">About</a> */}
+      <a href="/blog" className="py-2">
+        Blog
+      </a>
       <Link
         to="https://drive.google.com/file/d/196Y67TvoLsgxrqNbGI5HtaWB8c9g8u6M/view?usp=sharing"
         target="_blank"
