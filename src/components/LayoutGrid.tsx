@@ -10,11 +10,13 @@ export const LayoutGrid = () => {
       className: "col-span-1 md:col-span-3",
       thumbnail: "/surveyapp.png",
       desc: (
-        <p>
-          <strong>LEA Career Preference Tool.</strong> A web application to
-          identify potential career pathways for Defence personel based on their
-          input.
-        </p>
+        <a>
+          <p>
+            <strong>LEA Career Preference Tool.</strong> A web application to
+            identify potential career pathways for Defence personel based on
+            their input.
+          </p>
+        </a>
       ),
       fulldesc: (
         <p>
@@ -30,10 +32,12 @@ export const LayoutGrid = () => {
       className: "col-span-1 md:col-span-3",
       thumbnail: "/wang.png",
       desc: (
-        <p>
-          <strong>Wang's Natural Therapy Centre.</strong> Web design and
-          development project for local acupuncture clinic.
-        </p>
+        <a href="wangs-therapy.com" target="_blank">
+          <p>
+            <strong>Wang's Natural Therapy Centre.</strong> Web design and
+            development project for local acupuncture clinic.
+          </p>
+        </a>
       ),
       fulldesc: (
         <p>
@@ -49,10 +53,12 @@ export const LayoutGrid = () => {
       className: "col-span-1 md:col-span-3",
       thumbnail: "/mimiblooms.png",
       desc: (
-        <p>
-          <strong>MimiBlooms.</strong> An ecommerce platform developed with
-          Medusa.js and Next.js with auth and secure payment processing.
-        </p>
+        <a href="mimiblooms.store" target="_blank">
+          <p>
+            <strong>MimiBlooms.</strong> An ecommerce platform developed with
+            Medusa.js and Next.js with auth and secure payment processing.
+          </p>
+        </a>
       ),
       fulldesc: (
         <p>
