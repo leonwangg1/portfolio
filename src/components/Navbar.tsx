@@ -9,9 +9,9 @@ export const Navbar = () => {
       <a href="#work" className="py-2">
         Projects
       </a>
-      <a href="/blog" className="py-2">
+      <Link to="/blog" className="py-2">
         Blog
-      </a>
+      </Link>
       <Link
         to="https://drive.google.com/file/d/196Y67TvoLsgxrqNbGI5HtaWB8c9g8u6M/view?usp=sharing"
         target="_blank"
