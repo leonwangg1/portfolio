@@ -28,7 +28,7 @@ export default function Articles() {
         Blog
       </p>
       <main>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-1 h-screen grid-rows-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 h-screen grid-rows-3">
           {articles.map((article, index) => {
             return <ArticleItems key={index} article={article} index={index} />;
           })}
