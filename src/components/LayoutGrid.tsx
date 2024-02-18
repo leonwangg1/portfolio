@@ -1,6 +1,5 @@
 "use client";
 
-import { cn } from "../utils/cn";
 import "../App.css";
 import { motion, useTransform, useScroll } from "framer-motion";
 import { useRef } from "react";
@@ -34,7 +33,16 @@ const HorizontalScrollCarousel = () => {
   );
 };
 
-const Card = ({ card }) => {
+interface CardProps {
+  card: {
+    id: number;
+    className: string;
+    thumbnail: string;
+    desc: string | JSX.Element;
+  };
+}
+
+const Card = ({ card }: CardProps) => {
   return (
     <div
       key={card.id}
@@ -67,14 +75,14 @@ const cards = [
         input.
       </a>
     ),
-    fulldesc: (
-      <p>
-        <strong>The Land Engineering Agency Career Preference Tool.</strong> A
-        web-based application with options for inputting preferences and
-        experiences to allow Defence personel to explore potential career
-        pathways.
-      </p>
-    ),
+    // fulldesc: (
+    //   <p>
+    //     <strong>The Land Engineering Agency Career Preference Tool.</strong> A
+    //     web-based application with options for inputting preferences and
+    //     experiences to allow Defence personel to explore potential career
+    //     pathways.
+    //   </p>
+    // ),
   },
   {
     id: 2,
@@ -86,14 +94,14 @@ const cards = [
         development project for local acupuncture clinic.
       </a>
     ),
-    fulldesc: (
-      <p>
-        <strong>Wang's Natural Therapy Centre.</strong> Web design and
-        development project for local acupuncture clinic. The site offers a
-        user-friendly and serene design with easy onlie access to the clinic's
-        acupuncture and holistic services.
-      </p>
-    ),
+    // fulldesc: (
+    //   <p>
+    //     <strong>Wang's Natural Therapy Centre.</strong> Web design and
+    //     development project for local acupuncture clinic. The site offers a
+    //     user-friendly and serene design with easy onlie access to the clinic's
+    //     acupuncture and holistic services.
+    //   </p>
+    // ),
   },
   {
     id: 3,
@@ -105,14 +113,14 @@ const cards = [
         Medusa.js and Next.js with auth and secure payment processing.
       </a>
     ),
-    fulldesc: (
-      <p>
-        <strong>MimiBlooms.</strong> An ecommerce platform which features a CMS
-        for a tailored shopping experience, an admin dashboard, advanced product
-        filtering options, and a custom shopping cart integrated with Stripe for
-        secure payment processing.
-      </p>
-    ),
+    // fulldesc: (
+    //   <p>
+    //     <strong>MimiBlooms.</strong> An ecommerce platform which features a CMS
+    //     for a tailored shopping experience, an admin dashboard, advanced product
+    //     filtering options, and a custom shopping cart integrated with Stripe for
+    //     secure payment processing.
+    //   </p>
+    // ),
   },
   {
     id: 4,
