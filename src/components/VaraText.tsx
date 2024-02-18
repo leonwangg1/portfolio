@@ -1,26 +1,7 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Vara from "vara";
 
 export default function VaraText({ text }: { text: string }) {
-  const [fontSize, setFontSize] = useState(45);
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 600) {
-        setFontSize(40);
-      } else if (window.innerWidth > 600 && window.innerWidth < 900) {
-        setFontSize(45);
-      } else {
-        setFontSize(60);
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-    handleResize();
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
   useEffect(() => {
     new Vara(
       "#vara-container",
@@ -28,13 +9,13 @@ export default function VaraText({ text }: { text: string }) {
       [
         {
           text: text,
-          fontSize: fontSize,
+          fontSize: 45,
           strokeWidth: 1.5,
           color: "white",
         },
       ]
     );
-  }, [fontSize, text]);
+  }, []);
 
   return (
     <div
