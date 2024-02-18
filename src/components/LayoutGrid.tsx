@@ -3,7 +3,7 @@
 import { cn } from "../utils/cn";
 import "../App.css";
 
-const descStyle = "text-white";
+const descStyle = "text-white lg:text-lg";
 
 export const LayoutGrid = () => {
   const cards = [
