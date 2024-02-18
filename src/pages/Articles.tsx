@@ -93,7 +93,7 @@ function ArticleItems({ article, index }: { article: Article; index: number }) {
 
   return (
     <div
-      className="article__card p-4 mb-2 h-fit rounded-md border-neutral-400 border"
+      className="article__card p-4 mb-2 h-fit rounded-md bg-neutral-900"
       key={index}
     >
       <h3 className="article__title mb-[0.5rem] text-[1rem] md:text-[1.1rem] lg:text-md font-semibold">
