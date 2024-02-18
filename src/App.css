@@ -3,3 +3,18 @@
   height: 100%;
   background-color: #0d0a0a;
 }
+
+.cardanimate {
+  transition: transform 0.2s ease-in-out; /* Apply transition to the element's default state */
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .cardanimate:hover {
+    transform: scale(1.03); /* Scale effect on hover for desktop */
+    transition: transform 0.2s ease-in-out; /* Smooth transition */
+  }
+}
+
+.cardanimate:active {
+  transform: scale(1.1);
+}
