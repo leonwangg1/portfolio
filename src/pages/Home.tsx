@@ -1,5 +1,6 @@
 import PageLayout from "../PageLayout";
 import { LayoutGrid } from "../components/LayoutGrid";
+import VaraText from "../components/VaraText";
 
 export default function Home() {
   return (
@@ -8,7 +9,8 @@ export default function Home() {
       <div className="flex flex-col text-left mb-44 lg:mb-[22rem]">
         <div className="w-[95%] lg:w-[65%]">
           <p className="flex flex-row text-4xl lg:text-6xl mb-10">
-            Hi, I'm Leon. 🧑🏻‍💻
+            {/* Hi, I'm Leon. 🧑🏻‍💻 */}
+            <VaraText text="Hi, I'm Leon. " />
           </p>
           <p className="text-pretty text-md lg:text-xl">
             A full stack developer & web designer who enjoys solving complex
