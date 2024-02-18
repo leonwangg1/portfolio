@@ -1,12 +1,22 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export const Navbar = () => {
+  const navigate = useNavigate();
+
+  const handleProjectsClick = () => {
+    navigate("/");
+    setTimeout(() => {
+      const element = document.getElementById("work");
+      element?.scrollIntoView();
+    }, 0);
+  };
+
   return (
     <div className="flex flex-row justify-center gap-5 text-sm lg:text-lg">
       <Link to="/" className="py-2">
         Home
       </Link>
-      <a href="#work" className="py-2">
+      <a className="py-2 cursor-pointer" onClick={handleProjectsClick}>
         Projects
       </a>
       <Link to="/blog" className="py-2">
