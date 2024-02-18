@@ -85,7 +85,7 @@ export const LayoutGrid = () => {
                 className="scale-[.90] p-5 cursor-pointer"
                 onClick={() => {
                   if (typeof card.link === "string") {
-                    window.location.href = card.link;
+                    window.open(card.link, "_blank");
                   }
                 }}
               />
