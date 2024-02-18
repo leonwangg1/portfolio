@@ -92,10 +92,7 @@ function ArticleItems({ article, index }: { article: Article; index: number }) {
   const formattedDate = formatDate(article.pubDate);
 
   return (
-    <div
-      className="article__card p-4 mb-2 h-fit rounded-md bg-neutral-900"
-      key={index}
-    >
+    <div className="article__card p-4 mb-2 h-fit rounded-md" key={index}>
       <h3 className="article__title mb-[0.5rem] text-[1rem] md:text-[1.1rem] lg:text-md font-semibold">
         {article.title}
       </h3>
