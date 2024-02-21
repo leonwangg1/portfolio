@@ -67,7 +67,7 @@ export const LayoutGrid = () => {
   ];
 
   return (
-    <div className="w-full h-full py-5 grid grid-cols-1 md:grid-cols-6 mx-auto gap-2">
+    <div className="w-full h-full lg:w-[80%] lg:mb-20 py-5 grid grid-cols-1 md:grid-cols-6 mx-auto gap-2">
       {cards.map((card, i) => (
         <div
           className={cn(
